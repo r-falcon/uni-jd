@@ -1,0 +1,209 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarBackgroundColor":"rgba(208, 8, 89, 0.7)",
+				"navigationBarTitleText": "首页",
+				"navigationBarTextStyle":"white",
+				// "navigationStyle": "custom"
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue563",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "24px",
+							"color": "#f2f2f2",
+							"float": "left"
+						},{
+							"text": "\ue005",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "24px",
+							"color": "#f2f2f2"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/sort/sort",
+			"style": {
+				"navigationBarBackgroundColor":"#f2f2f2",
+				"navigationBarTitleText": "分类",
+				"navigationBarTextStyle":"black",
+				// "navigationStyle": "custom",
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue582",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "24px",
+							"color": "#333",
+							"float": "left"
+						}],
+						"searchInput":{
+							"placeholder":"请输入要查找的内容",
+							"placeholderColor":"grey",
+							"borderRadius":"20px"
+						}
+					}
+				}
+				
+			}
+		},
+		{
+			"path": "pages/sort/demo",
+			"style": {
+				"navigationBarTitleText": "联动",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/find/find",
+			"style": {
+				"navigationBarBackgroundColor": "#f33557",
+				"navigationBarTitleText": "发现",
+				"navigationBarTextStyle": "white",
+				// "navigationStyle": "custom"
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue582",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "24px",
+							"color": "#f2f2f2",
+							"float": "left"
+						},{
+							"text": "\ue332",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "24px",
+							"color": "#f2f2f2"
+						}],
+						"searchInput":{
+							"placeholder":"点击搜索 发现好物",
+							"placeholderColor":"#f2f2f2",
+							"borderRadius":"20px"
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarBackgroundColor": "#f5f5f5",
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "购物车",
+				// "navigationStyle": "custom"
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue582",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "24px",
+							"color": "#333",
+							"float": "left"
+						}, {
+							"text": "\ue537",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "24px",
+							"color": "#333"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarBackgroundColor": "rgb(250,83,61)",
+				"navigationBarTitleText": "我的京东",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue582",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "24px",
+							"color": "#FFFFFF",
+							"float": "left"
+						}, {
+							"text": "\ue537",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "24px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+
+		},
+		{
+			"path": "pages/index/demo",
+			"style": {
+				"navigationBarTitleText": "样板页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/onload",
+			"style": {
+				"navigationBarTitleText": "iphone下载",
+				// "navigationStyle": "custom",
+				"navigationBarBackgroundColor":"#f23030",
+				"navigationBarTextStyle":"white"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"scrollIndicator": "none"
+	},
+
+	// 页面的tab栏
+	"tabBar": {
+		// "borderStyle":"#ccc",
+		"color": "#515151",
+		"selectedColor": "#d81e06",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/imgs/tabs/index.png",
+				"selectedIconPath": "static/imgs/tabs/index-active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/sort/sort",
+				"iconPath": "static/imgs/tabs/sort.png",
+				"selectedIconPath": "static/imgs/tabs/sort-active.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/find/find",
+				"iconPath": "static/imgs/tabs/find.png",
+				"selectedIconPath": "static/imgs/tabs/find-active.png",
+				"text": "发现"
+
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/imgs/tabs/cart.png",
+				"selectedIconPath": "static/imgs/tabs/cart-active.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/imgs/tabs/mine.png",
+				"selectedIconPath": "static/imgs/tabs/mine-active.png",
+				"text": "我的京东"
+			}
+		]
+	}
+}
